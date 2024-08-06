@@ -22,7 +22,7 @@ function App() {
 
   const apiCall = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/campanhas");
+      const response = await axios.get("https://galactic-war-tracker-deploy-server.vercel.app/campanhas");
       return response.data;
     } catch (error) {
       console.error("Erro ao buscar dados da API", error);
