@@ -1,0 +1,43 @@
+.App {
+  height: 100vh;
+  text-align: center;
+
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.campanhas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.campanhasTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+  padding: 50px 20px;
+  border: 1px solid #fff;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #000;
+}
