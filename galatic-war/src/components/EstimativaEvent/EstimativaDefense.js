@@ -1,6 +1,6 @@
 const EstimativaDefense = ({ planetCampanhas, planetSnapshot }) => {
     if (planetSnapshot.length === 0) {
-        return <p>Aguardando dados...</p>;
+        return <span>Aguardando dados...</span>;
       }
     
       // console.log(planetSnapshot)
