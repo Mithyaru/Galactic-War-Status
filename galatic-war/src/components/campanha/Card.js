@@ -61,7 +61,7 @@ const Card = ({ campanhas, snapshot }) => {
                       <div className="cardHeader">
                         <div className="headerLeft">
                           <div>{item.planet.name + " "}</div>
-                          <div>{'Setor: ' + item.planet.sector + " "}</div>
+                          <div>{'Sector: ' + item.planet.sector + " "}</div>
                         </div>
                         <div className="headerRigth">
                           <div>{item.planet.biome.name + " "}</div>
@@ -78,7 +78,7 @@ const Card = ({ campanhas, snapshot }) => {
                       </div> */}
                       <div className="cardContent">
                         <div className="lines">
-                          <span>LIBERAÇÃO:</span>
+                          <span>LIBERATION:</span>
                           <span>
                             {calculo(
                               item.planet.maxHealth,
@@ -87,14 +87,14 @@ const Card = ({ campanhas, snapshot }) => {
                           </span>
                         </div>
                         <div className="lines">
-                        <span>TAXA DE LIBERAÇÃO:</span>
+                        <span>LIBERATION RATE:</span>
                           <Estimativa
                             planetCampanhas={[item]}
                             planetSnapshot={snapshot}
                           ></Estimativa>
                         </div>
                         <div className="lines">
-                          <span>PREVISÃO</span>
+                          <span>PREDICTION</span>
                           <span>
                             <PrevisaoNoEvent planetCampanhas={[item]}
                             planetSnapshot={snapshot}></PrevisaoNoEvent>
@@ -104,7 +104,7 @@ const Card = ({ campanhas, snapshot }) => {
                       <div>
                         <div className="indStats">
                         <div>
-                        {'Progresso Inimigo: ' + calculoEnemy(item.planet.maxHealth, item.planet.regenPerSecond) + '%'}
+                        {'Enemy progress: ' + calculoEnemy(item.planet.maxHealth, item.planet.regenPerSecond) + '%'}
                         </div>
                         <div>
                         {'Players: ' + item.planet.statistics.playerCount}
@@ -119,7 +119,7 @@ const Card = ({ campanhas, snapshot }) => {
                       <div className="cardHeader">
                         <div className="headerLeft">
                           <div>{item.planet.name + " "}</div>
-                          <div>{item.planet.sector + " "}</div>
+                          <div>{'Sector: ' + item.planet.sector + " "}</div>
                         </div>
                         <div className="headerRigth">
                           <div>{item.planet.biome.name + " "}</div>
@@ -133,14 +133,14 @@ const Card = ({ campanhas, snapshot }) => {
                       <div className="cardContent">
                         <div className="lines">
                         <div className="defend">
-                            <span>DEFESA: </span>
+                            <span>DEFENSE: </span>
                             <span>{calculo(
                                 item.planet.event.maxHealth,
                                 item.planet.event.health
                               ) + "%"}</span>
                           </div>  
                           <div className="attack">
-                            <span>INIMIGOS: </span>
+                            <span>ENEMYS: </span>
                             <span>
                             <TimeProgress startTime={item.planet.event.startTime} endTime={item.planet.event.endTime}></TimeProgress>
                             </span>
@@ -148,21 +148,21 @@ const Card = ({ campanhas, snapshot }) => {
                          
                         </div>
                         <div className="lines">
-                        <span>TAXA DE DEFESA</span>
+                        <span>DEFENSE RATE</span>
                           <EstimativaDefense
                             planetCampanhas={[item]}
                             planetSnapshot={snapshot}
                           ></EstimativaDefense>
                         </div>
                         <div className="lines">
-                          <span>PREVISÃO</span>
+                          <span>PREDICTION</span>
                           <span><PrevisaoEvent planetCampanhas={[item]}
                             planetSnapshot={snapshot} startTime={item.planet.event.startTime} endTime={item.planet.event.endTime}></PrevisaoEvent></span>
                         </div>
                       </div>
                       <div className="indStats">
                         <div>
-                        <span>Progresso Inimigo{': '} </span>
+                        <span>Enemy progress{': '} </span>
                         <AttackProgress startTime={item.planet.event.startTime} endTime={item.planet.event.endTime}></AttackProgress>
                         </div>
                         <div>
