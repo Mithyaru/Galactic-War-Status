@@ -1,7 +1,7 @@
 const PrevisaoNoEvent = ({ planetCampanhas, planetSnapshot }) => {
 
     if (planetSnapshot.length === 0) {
-        return <span>Aguardando dados...</span>;
+        return <span>Waiting Data...</span>;
       }
       
       const comparison = planetCampanhas.map((planetCampanha) => {
