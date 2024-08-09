@@ -54,13 +54,13 @@ const PrevisaoNoEvent = ({ planetCampanhas, planetSnapshot }) => {
     let result = "";
     
     if (days > 0) {
-        result += `${days} dia${days > 1 ? 's' : ''} `;
+        result += `${days} day${days > 1 ? 's' : ''} `;
     }
     if (hours > 0) {
-        result += `${hours} hora${hours > 1 ? 's' : ''} `;
+        result += `${hours} hour${hours > 1 ? 's' : ''} `;
     }
     if (minutes > 0) {
-        result += `${minutes} minuto${minutes > 1 ? 's' : ''}`;
+        result += `${minutes} minute${minutes > 1 ? 's' : ''}`;
     } 
     
     result = result.trim();
