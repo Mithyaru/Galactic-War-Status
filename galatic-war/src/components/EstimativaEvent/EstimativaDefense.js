@@ -1,6 +1,6 @@
 const EstimativaDefense = ({ planetCampanhas, planetSnapshot }) => {
     if (planetSnapshot.length === 0) {
-        return <span>Aguardando dados...</span>;
+        return <span>Waiting Data...</span>;
       }
     
       // console.log(planetSnapshot)
@@ -25,7 +25,7 @@ const EstimativaDefense = ({ planetCampanhas, planetSnapshot }) => {
     
         return (
           <div key={planetCampanha.id}>
-            {calculo(diffProgresso, planetCampanha.planet.event.maxHealth) + '% / HORA'}
+            {calculo(diffProgresso, planetCampanha.planet.event.maxHealth) + '% / HOUR'}
           </div>
         );
       });
