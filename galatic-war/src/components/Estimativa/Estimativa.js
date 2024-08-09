@@ -35,7 +35,7 @@ const Estimativa = ({ planetCampanhas, planetSnapshot }) => {
       if(calculo(diffProgresso, planetCampanha.planet.maxHealth) < calculoEnemy(planetCampanha.planet.regenPerSecond, planetCampanha.planet.maxHealth)) {
         // console.log('humanos perdendo em ' + planetCampanha.planet.name)
         return (
-          <span>{(calculo(diffProgresso, planetCampanha.planet.maxHealth) - calculoEnemy(planetCampanha.planet.regenPerSecond, planetCampanha.planet.maxHealth)).toFixed(2) + '% / HORA'}</span>
+          <span>{(calculo(diffProgresso, planetCampanha.planet.maxHealth) - calculoEnemy(planetCampanha.planet.regenPerSecond, planetCampanha.planet.maxHealth)).toFixed(2) + '% / HOUR'}</span>
         )
       } else {
         // console.log('humanos ganhando em ' + planetCampanha.planet.name)
