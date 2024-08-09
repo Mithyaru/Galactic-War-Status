@@ -1,6 +1,6 @@
 const PrevisaoEvent = ({ planetCampanhas, planetSnapshot, startTime, endTime }) => {
   if (planetSnapshot.length === 0) {
-    return <span>Aguardando dados...</span>;
+    return <span>Waiting Data...</span>;
   }
 
   const start = new Date(startTime);
@@ -87,7 +87,7 @@ result = result.trim();
     } else {
       return (
         <>
-          <div>FALHANDO</div>
+          <div>FAILING</div>
         </>
       );
     }
