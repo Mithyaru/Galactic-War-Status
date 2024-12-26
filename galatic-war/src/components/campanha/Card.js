@@ -13,6 +13,8 @@ const Card = ({ campanhas, snapshot }) => {
         return "cardAut";
       case "Terminids":
         return "cardTer";
+      case "Illuminate":
+        return "cardIllu"  
       default:
         return "card";
     }

@@ -20,6 +20,18 @@
   background: linear-gradient(180deg, rgba(28,28,28,1) 0%, rgba(0,0,0,0.75) 30%, rgba(252,244,0,0.75) 100%);
 }
 
+.cardIllu {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  color: white;
+  border: 2px solid #da00fc;
+  border-radius: 10px;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(28,28,28,1) 0%, rgba(0,0,0,0.75) 30%, rgba(218,0,252,0.75) 100%);
+
+}
+
 .cardHum {
   display: flex;
   justify-content: center;
