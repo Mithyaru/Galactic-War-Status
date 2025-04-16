@@ -198,7 +198,7 @@ app.get('/campanhas', async (req, res) => {
       historico: history
     });
   } catch (error) {
-    console.error('Erro ao buscar campanhas:', error.message);
+    console.error('Erro ao buscar campanhas:', error);
     res.status(500).json({ message: 'Erro ao buscar campanhas.' });
   }
 
