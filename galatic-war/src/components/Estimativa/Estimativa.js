@@ -3,7 +3,6 @@ const Estimativa = ({ planetCampanhas, planetSnapshot }) => {
     return <span>Waiting Data...</span>;
   }
 
-  console.log(planetSnapshot)
 
   const comparison = planetCampanhas.map((planetCampanha) => {
     const planetSnap = planetSnapshot.find((p) => p.id === planetCampanha.id);
