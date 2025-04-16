@@ -35,7 +35,7 @@ function App() {
     fetchData()
     const interval = setInterval(() => {
       fetchData();
-    }, 180000);
+    }, 300000);
     return () => clearInterval(interval);
   }, [])
 
