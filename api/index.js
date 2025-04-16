@@ -179,7 +179,7 @@ const atualizarCampanhas = async () => {
 };
 atualizarCampanhas(); 
 // Inicia o loop ao rodar o servidor
-setInterval(atualizarCampanhas, 300000); // 5 minutos (300000 ms)
+setInterval(atualizarCampanhas, 60000);
 
 
 app.get('/', (req, res) => {
